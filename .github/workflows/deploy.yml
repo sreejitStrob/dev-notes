@@ -17,5 +17,5 @@ jobs:
             username: ${{secrets.USERNAME}}
             port: 22
             script: |
-                    whoami
-                    ls -al
+                    cd /var/www/html/dev-notes
+                    sudo git pull origin main
