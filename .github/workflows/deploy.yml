@@ -16,4 +16,6 @@ jobs:
             key: ${{secrets.KEY}}
             username: ${{secrets.USERNAME}}
             port: 22
-            script: whoami
+            script: |
+                    whoami
+                    ls -al
